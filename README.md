@@ -1,6 +1,8 @@
 # Adobe Summit 2019 L722 Sample Project
 
-This is a project template for AEM-based applications. It is intended as a best-practice set of examples as well as a potential starting point to develop your own functionality.
+This repository contains a sample Adobe Experience Manager project. It is meant to accompany the workbook for Lab L722, "Get Up, Running, and Integrated with Cloud Manager for Experience Manager".
+
+> This project intentionally includes bugs. It should not be used as a point of reference for how to implement Experience Manager projects. For information on the specific issues present in this project, please consult the lab workbook.
 
 ## Modules
 
@@ -40,11 +42,15 @@ There are three levels of testing contained in the project:
 
 * unit test in core: this show-cases classic unit testing of the code contained in the bundle. To test, execute:
 
+```
     mvn clean test
+```
 
 * server-side integration tests: this allows to run unit-like tests in the AEM-environment, ie on the AEM server. To test, execute:
 
+```
     mvn clean verify -PintegrationTests
+```
 
 * client-side Hobbes.js tests: JavaScript-based browser-side tests that verify browser-side behavior. To test:
 
@@ -56,3 +62,11 @@ There are three levels of testing contained in the project:
 The project comes with the auto-public repository configured. To setup the repository in your Maven settings, refer to:
 
     http://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html
+
+### Contributing
+
+Contributions are welcomed! Read the [Contributing Guide](CONTRIBUTING.md) for more information.
+
+### Licensing
+
+This project is licensed under the Apache V2 License. See [LICENSE](LICENSE) for more information.
